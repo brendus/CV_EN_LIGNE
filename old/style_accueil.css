@@ -1,0 +1,406 @@
+/* STYLE DE LA PAGE D'ACCUEIL */
+
+			html
+			{
+				height: 100%;
+				margin: 0;
+				border: 0;
+				font-family: 'Josefin_light', Arial, serif;
+			}
+
+			body
+			{
+				height: 100%;
+				background-color: none;
+				border: 0;
+				margin: 0;
+				display: flex;
+			}
+
+			#main_wrapper
+			{
+				height: 600px;
+				width: 1000px;
+				background-color: black;
+				border: 2px solid #555;
+				margin: auto;
+				flex-direction: column;
+				box-shadow: 2px 2px 4px #999;
+			}
+
+			@font-face 
+			{
+			    font-family: 'Josefin_regular';
+			    src: url('Police_Josefin/JosefinSans-Regular.ttf') format('truetype');
+			}
+
+			@font-face
+			{
+			    font-family: 'Josefin_light';
+			    src: url('Police_Josefin/JosefinSans-Light.ttf') format('truetype');
+			}
+
+			@font-face
+			{
+			    font-family: 'Josefin_bold';
+			    src: url('Police_Josefin/JosefinSans-SemiBold.ttf') format('truetype');
+			}
+
+			/* HEADER ACCUEIL - Haut de la page */
+
+			#head_accueil
+			{
+				height: 300px;
+				width: 600px;
+				background-color: blue;
+				border: 0;
+				margin: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				align-items: center;
+				text-align: center;
+			}
+
+			#accueil_photo
+			{
+				height: 40%;
+				width: auto;
+				margin: 0;
+				border: 0;
+			}
+
+			#accueil_CV
+			{
+				margin: 0;
+				border: 0;
+				height: 40%;
+				background-color: none;
+			}
+
+			#accueil_CV h1
+			{
+				margin: 0;
+				margin-top: 20px;
+				border: 0;
+				font-family: 'Josefin_regular', Arial, serif;
+				font-size: 2em;
+			}
+
+			#accueil_CV p
+			{
+				margin-top: 4px;
+				border: 0;
+			}
+
+/* ---------------- MENU - Navigation ------------------ */
+
+			#compo_cv
+			{
+				height: 140px;
+				width: 600px;
+				border: 0;
+				margin: auto;
+				background-color: purple;
+				font-family: 'Josefin_regular', Arial, serif;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			#compo_cv ul
+			{	
+				width: 600px;
+				margin: 0;
+				border: 0;
+				padding: 0;
+				background-color: grey;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			#compo_cv li
+			{
+				height: 100px;
+				width: 100px;
+				border: 2px solid #333;
+				border-radius: 50%;
+				background-color: #333;
+				text-align: center;
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			#compo_cv img
+			{
+				height: 80px;
+				margin: auto;
+			}
+
+			#compo_cv li:hover
+			{
+				border: 2px solid #333;
+				background-color: white;
+			}
+
+			#compo_cv li a
+			{
+				text-decoration: none;
+				color: white;
+			}
+
+			#compo_cv li a:hover
+			{
+				text-decoration: none;
+				color: #333;
+			}
+
+			/* CONTACT */
+
+			#accueil_contact
+			{
+				height: 140px;
+				width: 600px;
+				border: 0;
+				margin: auto;
+				background-color: green;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				text-align: center;
+			}
+
+			#accueil_contact_intro
+			{
+				height: 40%;
+				margin: 0;
+				border: 0;
+				background-color: none;
+			}
+
+			#accueil_contact_details
+			{
+				height: 60%;
+				width: 100%;
+				margin: 0;
+				border: 0;
+				background-color: none;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				color: #666;
+			}
+
+			#accueil_contact_details p
+			{
+				font-family: 'Josefin_bold', Arial, serif;
+			}
+
+			/* FOOTER - Bas de la page */
+
+			footer
+			{
+				height: 20px;
+				width: 600px;
+				border: 0;
+				margin: auto;
+				background-color: yellow;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			footer p
+			{
+				text-align: center;
+				font-style: italic;
+				color: #111;
+				font-size: 0.8em;
+			}
+
+/* ----------------- PAGES INTERIEURES DU CV ---------------- */
+
+			.pages_menu
+			{
+				height: 10%;
+				width: 80%;
+				border: 0;
+				margin: auto;
+				padding: 0;
+				background-color: none;
+			}
+
+			.pages_menu nav
+			{
+				height: 100%;
+				width: 100%;
+				border: 0;
+				margin: 0;
+			}
+
+			.pages_menu ul
+			{
+				height: 100%;
+				width: 100%;
+				border: 0;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: none;
+				list-style: none;
+			}
+
+			.pages_menu li
+			{	
+				width: 100px;
+				border: 2px solid #333;
+				margin: auto;
+				text-align: center;
+				padding: 10px 20px 5px 20px;
+				font-family: 'Josefin_regular', Arial, serif;
+				background-color: #333;
+			}
+
+			.pages_menu li:hover
+			{
+				background-color: white;
+			}
+
+			.pages_menu li a
+			{
+				color: white;
+				text-decoration: none;
+			}
+
+			.pages_menu li a:hover
+			{
+				text-decoration: none;
+				color: #333;
+			}
+
+			#experience
+			{
+				height: 80%;
+				width: 80%;
+				border: 0;
+				margin: auto;
+				background-color: none;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			#tab_experience
+			{
+				width: 100%;
+				border: 0;
+				margin: auto;
+				border-collapse: collapse;
+				text-align: center;
+			}
+
+			#tab_experience th
+			{
+				font-style: italic;
+			}
+
+			#tab_experience em
+			{
+				font-weight: bold;
+			}
+
+			#pages_contact
+			{
+				height: 10%;
+				border: 0;
+				margin: 0;
+				background-color: none;
+			}
+
+			td, th
+			{	
+				margin: 0;
+				border-top: 1px solid black;
+				border-bottom: 1px solid black;
+				border-left: 0;
+			}
+
+			#tab_experience th
+			{
+				background-color: #999;
+			}
+
+			#quand, #ou
+			{
+				width: 10%;
+			}
+
+			#ou
+			{
+				width: 20%;
+			}
+
+			#quoi
+			{
+				width: 70%;
+			}
+
+			table ul 
+			{
+				text-align: left;
+			}
+
+			#pages_contact
+			{
+				height: 30%;
+				width: 80%;
+				border: 0;
+				margin: auto;
+				background-color: none;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				text-align: center;
+			}
+
+			#pages_moyens_contact
+			{
+				height: 60%;
+				width: 80%;
+				background-color: none;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			#pages_moyens_contact p
+			{
+				color: #2b697b;
+				font-size: 100%;
+				font-family: 'Josefin_bold', Arial, serif;
+				text-align: center;
+			}
+
+			#pages_moyens_contact a
+			{
+				text-decoration: none;
+				color: #2b697b;
+			}
+
+			#pages_moyens_contact p:hover
+			{
+				font-size: 1.2em;
+				font-weight: bold;
+			}

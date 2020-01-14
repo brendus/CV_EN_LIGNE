@@ -1,0 +1,428 @@
+@font-face 
+{
+    font-family: 'Josefin_regular';
+    src: url('Police_Josefin/JosefinSans-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Josefin_light';
+    src: url('Police_Josefin/JosefinSans-Light.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Josefin_bold';
+    src: url('Police_Josefin/JosefinSans-SemiBold.ttf') format('truetype');
+}
+
+/* - - - - - VERSION MOBILE FIRST - - - - - */
+
+/*		MAX WIDTH 479px		*/
+
+html
+{
+	width: 100%;
+	font-family: 'Josefin_regular', Arial, serif;
+	margin: 0;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body
+{
+	width: 100%;
+	margin: 0;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main_wrapper
+{
+	margin: 20px;
+	border: 2px solid grey;
+	box-shadow: 2px 2px 2px grey;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: none;
+}
+
+header
+{
+	margin: 10px 10px 5px 10px;
+	background-color: none;
+	display: flex;
+	flex-direction: column;
+}
+
+#profil_CV
+{	
+	width: 100%;
+	background-color: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#photo_CV
+{
+	width: 100%;
+	margin: 10px;
+	background-color: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#photo_CV img
+{
+	height: auto;
+	width: 50%;
+	background-color: none;
+}
+
+#titre_CV
+{
+	height: 70px;
+	width: 100%;
+	background-color: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#titre_CV h1
+{
+	margin: 4px;
+	text-align: center;
+	color: #9499ac;
+	font-size: 8vw;
+}
+
+#coordonnees_CV
+{
+	height: 70px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: none;
+}
+
+#coordonnees_CV a
+{
+	height: 90%;
+	display: flex;
+	background-color: none;
+}
+
+#coordonnees_CV img
+{
+	height: 100%;
+	width: auto;
+	background-color: none;
+}
+
+#description_CV
+{
+	margin: 10px 10px 5px 10px;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#description_CV p
+{
+	width: 80%;
+	margin: 10px;
+	text-align: center;
+	background-color: none;
+	font-size: 4vw;
+}
+
+#menu_CV
+{
+	margin: 10px 0px 40px 0px;
+	background-color: blue;
+	display: flex;
+	flex-direction: column;
+}
+
+
+#menu_CV ul
+{
+	width: 240px;
+	margin: 10px 0px 10px 0px;
+	border: 0;
+	padding: 0;
+	background-color: none;
+}
+
+#menu_CV li
+{
+	height: 40px;
+	margin: 20px 10px 20px 10px;
+	border: 1px solid #9499ac;
+	background-color: none;
+	box-shadow: 2px 2px 10px #9499ac;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu_CV a
+{
+	padding-top: 7px;
+	color: #9499ac;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-align: center;
+	background-color: none;
+}
+
+footer
+{
+	background-color: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+footer p
+{
+	width: 100%;
+	margin: 2px;
+	border: 0;
+	padding: 0;
+	text-align: center;
+	background-color: none;
+	color: #9499ac;
+	font-size: 0.8em;
+}
+
+/* - - - - - VERSION TABLETTE  - - - - - */
+
+/*		MIN WIDTH 480px		*/
+
+@media all and (min-width: 480px)
+{
+
+#profil_CV
+{	
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#photo_CV
+{
+	width: 50%;
+	margin: 10px 0px 10px 0px;
+	justify-content: flex-end;
+	background-color: none;
+}
+
+#photo_CV img
+{
+	height: auto;
+	width: 70%;
+}
+
+#titre_CV
+{
+	height: 100px;
+	width: 50%;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: none;
+}
+
+#titre_CV h1
+{
+	font-size: 8vw;
+}
+
+#coordonnees_CV
+{
+	height: 100px;
+	width: 80%;
+	margin: auto;
+}
+
+#coordonnees_CV a
+{
+	height: 70%;
+	display: flex;
+	background-color: none;
+}
+
+#coordonnees_CV img
+{
+	height: 100%;
+	width: auto;
+	background-color: none;
+}
+
+#description_CV p
+{
+	font-size: 3.5vw;
+}
+
+}
+/* - - - - - VERSION DESKTOP  - - - - - */
+
+/*		MIN WIDTH 640px		*/
+
+@media all and (min-width: 800px)
+{
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+}
+
+#main_wrapper
+{
+	height: 100%;
+}
+
+header
+{
+	height: 30%;
+	width: 100%;
+	margin: 0;
+	flex-direction: row;
+}
+
+#profil_CV
+{	
+	height: 100%;
+	width: 67%;
+	margin: 0;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#photo_CV
+{
+	height: 100%;
+	width: 50%;
+	justify-content: center;
+}
+
+#photo_CV img
+{
+	height: 90%;
+	width: auto;
+}
+
+#titre_CV
+{
+	height: 100%;
+	width: 50%;
+	align-items: center;
+}
+
+#titre_CV h1
+{
+	font-size: 4vw;
+}
+
+#coordonnees_CV
+{
+	height: 100%;
+	width: 33%;
+	justify-content: space-around;
+}
+
+#coordonnees_CV a
+{
+	height: 60%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: red;
+}
+
+#coordonnees_CV img
+{
+	height: 70%;
+	width: auto;
+	background-color: none;
+}
+
+#description_CV
+{
+	height: 30%;
+	width: 60%;
+	margin: 0;
+	flex-direction: column;
+}
+
+#description_CV p
+{
+	font-size: 1.4vw;
+}
+
+#menu_CV
+{
+	height: 30%;
+	width: 90%;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu_CV ul
+{
+	width: 90%;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background-color: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#menu_CV li
+{
+	flex-direction: row;
+	width: 25%;
+}
+
+#menu_CV a
+{
+	padding-top: 7px;
+	font-size: 1.9vw;
+	text-decoration: none;
+	text-align: center;
+	background-color: none;
+}
+
+footer
+{
+	height: 5%;
+	margin: 0;
+	background-color: green;
+}
+
+}
+
