@@ -44,8 +44,8 @@ body
 #main_wrapper
 {
 	margin: 20px;
-	border: 2px solid grey;
-	box-shadow: 2px 2px 2px grey;
+	border: 2px solid #9499ac;
+	box-shadow: 2px 2px 2px #9499ac;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -104,6 +104,7 @@ header
 	text-align: center;
 	color: #9499ac;
 	font-size: 8vw;
+	background-color: none;
 }
 
 #coordonnees_CV
@@ -134,7 +135,7 @@ header
 #description_CV
 {
 	margin: 10px 10px 5px 10px;
-	background-color: red;
+	background-color: none;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -152,7 +153,7 @@ header
 #menu_CV
 {
 	margin: 10px 0px 40px 0px;
-	background-color: blue;
+	background-color: none;
 	display: flex;
 	flex-direction: column;
 }
@@ -183,7 +184,6 @@ header
 
 #menu_CV a
 {
-	padding-top: 7px;
 	color: #9499ac;
 	font-size: 1.5em;
 	text-decoration: none;
@@ -235,7 +235,7 @@ footer p
 #photo_CV img
 {
 	height: auto;
-	width: 70%;
+	width: 60%;
 }
 
 #titre_CV
@@ -275,43 +275,66 @@ footer p
 
 #description_CV p
 {
-	font-size: 3.5vw;
+	font-size: 2.5vmax;
 }
 
 }
+
+/* - - - - - VERSION HORIZONTALE > 800px  - - - - - */
+
+/*		MIN HEIGHT 800px		*/
+
+@media all and (min-width: 799px)
+{
+
+#description_CV p
+{
+	font-size: 2.5vw;
+}
+
+}
+
+
 /* - - - - - VERSION DESKTOP  - - - - - */
 
-/*		MIN WIDTH 640px		*/
+/*		MIN WIDTH 800px		*/
 
-@media all and (min-width: 800px)
+@media all and (min-width: 1023px)
 {
 
 html
 {
 	height: 100%;
+	margin: 0;
 }
 
 body
 {
 	height: 100%;
+	margin: 0;
 }
 
 #main_wrapper
 {
-	height: 100%;
+	height: 95%;
+	width: 97%;
+	padding: 0;
+	margin: 0;
 }
 
 header
 {
-	height: 30%;
+	height: 35%;
 	width: 100%;
 	margin: 0;
 	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
 }
 
 #profil_CV
 {	
-	height: 100%;
+	height: 80%;
 	width: 67%;
 	margin: 0;
 	flex-direction: row;
@@ -335,28 +358,44 @@ header
 {
 	height: 100%;
 	width: 50%;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 
 #titre_CV h1
 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 	font-size: 4vw;
 }
 
 #coordonnees_CV
 {
-	height: 100%;
+	height: 80%;
 	width: 33%;
-	justify-content: space-around;
+	margin: 0;
+	justify-content: flex-end;
+	margin-right: 25px;
 }
 
 #coordonnees_CV a
 {
 	height: 60%;
+	max-height: 100px;
+	margin-right: 20px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: red;
+}
+
+#coordonnees_CV a:hover
+{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #9499ac;
 }
 
 #coordonnees_CV img
@@ -368,22 +407,24 @@ header
 
 #description_CV
 {
-	height: 30%;
-	width: 60%;
+	height: 35%;
+	width: 80%;
 	margin: 0;
 	flex-direction: column;
+	justify-content: center;
 }
 
 #description_CV p
 {
-	font-size: 1.4vw;
+	font-size: 3vh;
 }
 
 #menu_CV
 {
-	height: 30%;
+	height: 20%;
 	width: 90%;
 	margin: 0;
+	border: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -392,11 +433,11 @@ header
 
 #menu_CV ul
 {
+	height: 40%;
 	width: 90%;
 	margin: 0;
 	border: 0;
 	padding: 0;
-	background-color: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -404,24 +445,37 @@ header
 
 #menu_CV li
 {
-	flex-direction: row;
-	width: 25%;
+	height: 100%;
+	width: 20%;
+	margin: 0;
+	padding-top: 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #menu_CV a
 {
-	padding-top: 7px;
-	font-size: 1.9vw;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	font-size: 1.7vw;
 	text-decoration: none;
-	text-align: center;
 	background-color: none;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu_CV a:hover
+{
+	font-size: 1.8vw;
+	text-decoration: underline;
 }
 
 footer
 {
-	height: 5%;
+	height: 10%;
 	margin: 0;
-	background-color: green;
 }
 
 }
